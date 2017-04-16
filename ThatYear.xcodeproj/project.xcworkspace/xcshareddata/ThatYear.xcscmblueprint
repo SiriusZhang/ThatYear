@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BEC3455CC4D1DC928BDF6DC96FAEC270B2A7F003",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BEC3455CC4D1DC928BDF6DC96FAEC270B2A7F003" : 9223372036854775807,
+    "62E38AF18CA75E9F975AD7F8CF07304DE4D89A66" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3FE00331-4D6F-4208-A1EE-AB1E968C070B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BEC3455CC4D1DC928BDF6DC96FAEC270B2A7F003" : "ThatYear\/",
+    "62E38AF18CA75E9F975AD7F8CF07304DE4D89A66" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ThatYear",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ThatYear.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SiriusZhang\/CocosAR.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "62E38AF18CA75E9F975AD7F8CF07304DE4D89A66"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SiriusZhang\/ThatYear.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BEC3455CC4D1DC928BDF6DC96FAEC270B2A7F003"
+    }
+  ]
+}
