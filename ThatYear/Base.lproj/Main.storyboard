@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="方正.ttf">
+            <string>FZWBJW--GB1-0</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Slide Navigation Controller-->
         <scene sceneID="L9p-TC-QlT">
@@ -48,15 +53,15 @@
                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="账户号码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXl-ki-glA">
                                     <rect key="frame" x="123" y="74" width="308" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="FZWBJW--GB1-0" family="FZWeiBei-S03S" pointSize="17"/>
+                                    <color key="textColor" red="0.65767174959999997" green="0.83325225110000001" blue="0.75954920049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="用户昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xe6-kd-knq">
                                     <rect key="frame" x="123" y="50" width="308" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="FZWBJW--GB1-0" family="FZWeiBei-S03S" pointSize="17"/>
+                                    <color key="textColor" red="0.65767174959999997" green="0.83325225110000001" blue="0.75954920049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -84,8 +89,8 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="首页" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VOX-iO-gmd">
                                                     <rect key="frame" x="52" y="0.0" width="308" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="FZWBJW--GB1-0" family="FZWeiBei-S03S" pointSize="17"/>
+                                                    <color key="textColor" red="0.65767174959182739" green="0.83325225114822388" blue="0.75954920053482056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="home" id="hDh-kB-jid">
@@ -105,8 +110,8 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="AR模式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bD6-d4-ie0">
                                                     <rect key="frame" x="52" y="0.0" width="308" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="FZWBJW--GB1-0" family="FZWeiBei-S03S" pointSize="17"/>
+                                                    <color key="textColor" red="0.65767174959999997" green="0.83325225110000001" blue="0.75954920049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="ar" id="3yz-e7-pvZ">
@@ -126,8 +131,8 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="经典系列" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XCY-NM-YQI">
                                                     <rect key="frame" x="52" y="0.0" width="308" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="FZWBJW--GB1-0" family="FZWeiBei-S03S" pointSize="17"/>
+                                                    <color key="textColor" red="0.65767174959999997" green="0.83325225110000001" blue="0.75954920049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="golden" id="L5L-Bq-WDr" userLabel="golden">
@@ -147,8 +152,8 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="新品上架" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dpW-84-0lv">
                                                     <rect key="frame" x="52" y="0.0" width="308" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="FZWBJW--GB1-0" family="FZWeiBei-S03S" pointSize="17"/>
+                                                    <color key="textColor" red="0.65767174959999997" green="0.83325225110000001" blue="0.75954920049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="newtype" id="nAl-FB-mF2" userLabel="newtype">
@@ -168,8 +173,8 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="在线订购" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pv5-bg-PWl">
                                                     <rect key="frame" x="52" y="0.0" width="308" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="FZWBJW--GB1-0" family="FZWeiBei-S03S" pointSize="17"/>
+                                                    <color key="textColor" red="0.65767174959999997" green="0.83325225110000001" blue="0.75954920049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="online" id="0ns-pw-Twq" userLabel="online">
@@ -189,8 +194,8 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="私人定制" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k4z-gA-PeB" userLabel="私人定制">
                                                     <rect key="frame" x="52" y="0.0" width="308" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="FZWBJW--GB1-0" family="FZWeiBei-S03S" pointSize="17"/>
+                                                    <color key="textColor" red="0.65767174959999997" green="0.83325225110000001" blue="0.75954920049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="private" id="EZd-F3-kKN" userLabel="private">

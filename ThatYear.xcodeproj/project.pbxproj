@@ -21,6 +21,7 @@
 		EDB60EE61EA36E3D00C4D29C /* GifPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB60EE51EA36E3D00C4D29C /* GifPlayerController.m */; };
 		EDB60EE81EA370F600C4D29C /* 在线订购.gif in Resources */ = {isa = PBXBuildFile; fileRef = EDB60EE71EA370F600C4D29C /* 在线订购.gif */; };
 		EDB60EEA1EA3763C00C4D29C /* 品牌故事.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDB60EE91EA3763C00C4D29C /* 品牌故事.jpg */; };
+		FCB91E3C1EA50504005D6723 /* 方正.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCB91E3B1EA50504005D6723 /* 方正.ttf */; };
 		FCCFCDB01EA4A06000C07BDE /* pic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCCFCDAD1EA4A06000C07BDE /* pic1.jpg */; };
 		FCCFCDB11EA4A06000C07BDE /* pic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCCFCDAE1EA4A06000C07BDE /* pic2.jpg */; };
 		FCCFCDB21EA4A06000C07BDE /* pic3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCCFCDAF1EA4A06000C07BDE /* pic3.jpg */; };
@@ -57,6 +58,7 @@
 		EDB60EE51EA36E3D00C4D29C /* GifPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifPlayerController.m; sourceTree = "<group>"; };
 		EDB60EE71EA370F600C4D29C /* 在线订购.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "在线订购.gif"; sourceTree = "<group>"; };
 		EDB60EE91EA3763C00C4D29C /* 品牌故事.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "品牌故事.jpg"; sourceTree = "<group>"; };
+		FCB91E3B1EA50504005D6723 /* 方正.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "方正.ttf"; sourceTree = "<group>"; };
 		FCCFCDAD1EA4A06000C07BDE /* pic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic1.jpg; sourceTree = "<group>"; };
 		FCCFCDAE1EA4A06000C07BDE /* pic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic2.jpg; sourceTree = "<group>"; };
 		FCCFCDAF1EA4A06000C07BDE /* pic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic3.jpg; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		EDB60EC01EA3604400C4D29C /* ThatYear */ = {
 			isa = PBXGroup;
 			children = (
+				FCB91E3B1EA50504005D6723 /* 方正.ttf */,
 				FCCFCDB31EA4A8AA00C07BDE /* banner1.JPG */,
 				FCCFCDB41EA4A8AA00C07BDE /* banner2.JPG */,
 				FCCFCDB51EA4A8AA00C07BDE /* banner3.jpg */,
@@ -240,6 +243,7 @@
 				FCCFCDB11EA4A06000C07BDE /* pic2.jpg in Resources */,
 				FCCFCDB01EA4A06000C07BDE /* pic1.jpg in Resources */,
 				FCCFCDBA1EA4A8AA00C07BDE /* banner2.JPG in Resources */,
+				FCB91E3C1EA50504005D6723 /* 方正.ttf in Resources */,
 				EDB60ECC1EA3604400C4D29C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -418,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

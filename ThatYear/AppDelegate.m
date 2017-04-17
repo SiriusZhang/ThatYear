@@ -20,6 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     MenuViewController *menu = [MenuViewController instantiate];
     [SlideNavigationController sharedInstance].leftMenu = menu;
+    [SlideNavigationController sharedInstance].portraitSlideOffset = 120;
     [SlideNavigationController sharedInstance].avoidSwitchingToSameClassViewController = NO;
     return YES;
 }
