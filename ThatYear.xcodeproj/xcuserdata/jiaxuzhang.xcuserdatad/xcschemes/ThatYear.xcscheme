@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FC0026891EA321750097E916"
+               BlueprintIdentifier = "EDB60EBD1EA3604400C4D29C"
                BuildableName = "ThatYear.app"
                BlueprintName = "ThatYear"
                ReferencedContainer = "container:ThatYear.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC0026891EA321750097E916"
+            BlueprintIdentifier = "EDB60EBD1EA3604400C4D29C"
             BuildableName = "ThatYear.app"
             BlueprintName = "ThatYear"
             ReferencedContainer = "container:ThatYear.xcodeproj">
@@ -42,7 +42,7 @@
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC0026891EA321750097E916"
+            BlueprintIdentifier = "EDB60EBD1EA3604400C4D29C"
             BuildableName = "ThatYear.app"
             BlueprintName = "ThatYear"
             ReferencedContainer = "container:ThatYear.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FC0026891EA321750097E916"
+            BlueprintIdentifier = "EDB60EBD1EA3604400C4D29C"
             BuildableName = "ThatYear.app"
             BlueprintName = "ThatYear"
             ReferencedContainer = "container:ThatYear.xcodeproj">

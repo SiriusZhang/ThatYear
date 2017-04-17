@@ -1,0 +1,17 @@
+PODS:
+  - iOS-Slide-Menu (1.5)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+
+DEPENDENCIES:
+  - iOS-Slide-Menu
+  - SDWebImage (~> 3.8)
+
+SPEC CHECKSUMS:
+  iOS-Slide-Menu: 40b0cbd8916c42afc755f0869793cd09e7a32102
+  SDWebImage: '098e97e6176540799c27e804c96653ee0833d13c'
+
+PODFILE CHECKSUM: ef04cdfc7071b82e4db81c04fbcc8207fa0bbdfa
+
+COCOAPODS: 1.2.0
