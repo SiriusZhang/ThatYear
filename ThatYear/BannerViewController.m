@@ -50,7 +50,6 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    NSLog(@"滚动中");
     CGFloat scrollviewW =  scrollView.frame.size.width;
     CGFloat x = scrollView.contentOffset.x;
     int page = (x + scrollviewW / 2) /  scrollviewW;
