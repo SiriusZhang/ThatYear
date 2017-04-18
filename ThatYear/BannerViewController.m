@@ -23,18 +23,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    CGRect bounds = self.view.frame;
+    bounds.size.height -= 64;
+    self.scrollview.frame = bounds;
     
     CGFloat imageW = self.scrollview.frame.size.width;
     CGFloat imageH = self.scrollview.frame.size.height;
     CGFloat imageY = 0;
-    
-    //CGRect bounds = [UIApplication sharedApplication].keyWindow.bounds;
-    
-    for (int i = 0; i < self.imageNames.count; i++) {
+        for (int i = 0; i < self.imageNames.count; i++) {
         UIImageView *imageView = [[UIImageView alloc] init];
+        UIImage *image = [UIImage imageNamed:self.imageNames[i]];
+        [image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.5];
         CGFloat imageX = i * imageW;
+                        
         imageView.frame = CGRectMake(imageX, imageY, imageW, imageH);
-        imageView.image = [UIImage imageNamed:self.imageNames[i]];
+        imageView.image = image;
         self.scrollview.showsHorizontalScrollIndicator = NO;
         [self.scrollview addSubview:imageView];
     }
@@ -44,7 +48,6 @@
     self.scrollview.pagingEnabled = YES;
     self.pageControl.numberOfPages= self.imageNames.count;
     self.scrollview.delegate = self;
-
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -54,8 +57,6 @@
     int page = (x + scrollviewW / 2) /  scrollviewW;
     self.pageControl.currentPage = page;
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

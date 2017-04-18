@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -18,7 +19,7 @@
         <scene sceneID="L9p-TC-QlT">
             <objects>
                 <navigationController id="3uG-SB-EZu" customClass="SlideNavigationController" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="ydT-GX-MDY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ydT-GX-MDY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -78,12 +79,18 @@
                             <rect key="frame" x="0.0" y="432" width="375" height="237"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="qcV-Lf-2FU">
-                                    <rect key="frame" x="58" y="145" width="177" height="57"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="qcV-Lf-2FU">
+                                    <rect key="frame" x="38" y="193" width="100" height="26"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="26" id="IeT-9F-dpI"/>
+                                    </constraints>
                                 </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="qcV-Lf-2FU" firstAttribute="leading" secondItem="0th-sG-wdk" secondAttribute="leadingMargin" constant="30" id="19b-ZG-NPi"/>
+                                <constraint firstAttribute="bottomMargin" secondItem="qcV-Lf-2FU" secondAttribute="bottom" constant="10" id="2oR-3m-fBz"/>
+                            </constraints>
                         </view>
                         <sections>
                             <tableViewSection id="lDg-HR-dGJ">
@@ -271,8 +278,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A6h-Kv-gK9">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A6h-Kv-gK9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="CA8-xl-eij">
                                 <rect key="frame" x="144" y="520" width="87" height="37"/>
@@ -280,14 +288,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="A6h-Kv-gK9" firstAttribute="top" secondItem="s5o-oz-5L3" secondAttribute="top" id="Btb-GZ-520"/>
-                            <constraint firstItem="A6h-Kv-gK9" firstAttribute="bottom" secondItem="wvr-KP-pa8" secondAttribute="top" id="Xht-di-MV2"/>
-                            <constraint firstItem="CA8-xl-eij" firstAttribute="top" secondItem="xaK-OP-DVt" secondAttribute="bottom" constant="500" id="dsw-Az-wnE"/>
-                            <constraint firstItem="CA8-xl-eij" firstAttribute="centerX" secondItem="s5o-oz-5L3" secondAttribute="centerX" id="iZu-9c-bpn"/>
-                            <constraint firstItem="A6h-Kv-gK9" firstAttribute="leading" secondItem="s5o-oz-5L3" secondAttribute="leading" id="rtd-gw-XAS"/>
-                            <constraint firstItem="CA8-xl-eij" firstAttribute="centerX" secondItem="A6h-Kv-gK9" secondAttribute="centerX" id="zuh-Ty-IPR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CA8-xl-eij" secondAttribute="trailing" constant="128" id="gKV-CQ-Lma"/>
+                            <constraint firstItem="wvr-KP-pa8" firstAttribute="top" secondItem="CA8-xl-eij" secondAttribute="bottom" constant="110" id="sRm-fN-QL5"/>
+                            <constraint firstItem="CA8-xl-eij" firstAttribute="leading" secondItem="s5o-oz-5L3" secondAttribute="leadingMargin" constant="128" id="uhg-Kc-neP"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="pageControl" destination="CA8-xl-eij" id="fOq-yp-CAV"/>
                         <outlet property="scrollview" destination="A6h-Kv-gK9" id="xUS-bc-866"/>

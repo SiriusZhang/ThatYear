@@ -47,7 +47,7 @@
             break;
         case 3: {
             GifPlayerController *gif = [GifPlayerController instantiate];
-            gif.imageName = @"在线订购.gif";
+            gif.imageName = @"私人定制.gif";
             gif.isRoot = YES;
             [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:gif withSlideOutAnimation:NO andCompletion:nil];
         }

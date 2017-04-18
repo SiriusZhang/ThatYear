@@ -64,10 +64,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     switch (indexPath.row) {
         case 0:{
-            ScrollViewController *scroll = [ScrollViewController instantiate];
-            scroll.imageName = @"品牌故事.gif";
-            scroll.isRoot = YES;
-            [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:scroll withSlideOutAnimation:NO andCompletion:nil];
+            GifPlayerController *gif = [GifPlayerController instantiate];
+            gif.imageName = @"品牌故事.gif";
+            gif.isRoot = YES;
+            [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:gif withSlideOutAnimation:NO andCompletion:nil];
         }
             break;
         case 1:{

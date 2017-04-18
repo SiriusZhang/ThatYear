@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    [[SDImageCache sharedImageCache] setValue:nil forKey:@"memCache"];
     NSString *imagePath = [[NSBundle mainBundle] pathForResource:[self.imageName stringByDeletingPathExtension] ofType:[self.imageName pathExtension]];
     NSURL *url = [NSURL fileURLWithPath:imagePath];
     [self.imageView sd_setImageWithURL:url];
@@ -32,5 +32,4 @@
 - (BOOL)slideNavigationControllerShouldDisplayLeftMenu {
     return self.isRoot;
 }
-
 @end
