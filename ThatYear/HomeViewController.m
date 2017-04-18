@@ -65,13 +65,14 @@
     switch (indexPath.row) {
         case 0:{
             ScrollViewController *scroll = [ScrollViewController instantiate];
-            scroll.imageName = @"品牌故事.jpg";
+            scroll.imageName = @"品牌故事.gif";
             scroll.isRoot = YES;
             [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:scroll withSlideOutAnimation:NO andCompletion:nil];
         }
             break;
         case 1:{
             BannerViewController *banner = [BannerViewController instantiate];
+            banner.imageNames = [[NSArray alloc]initWithObjects: @"ui1_750.jpg", @"ui2_750.jpg",nil];
             banner.isRoot = YES;
             [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:banner withSlideOutAnimation:NO andCompletion:nil];
         }

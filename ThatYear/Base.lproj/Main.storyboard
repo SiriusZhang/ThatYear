@@ -18,7 +18,7 @@
         <scene sceneID="L9p-TC-QlT">
             <objects>
                 <navigationController id="3uG-SB-EZu" customClass="SlideNavigationController" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ydT-GX-MDY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="ydT-GX-MDY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -42,9 +42,8 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="168"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S6F-xd-6tJ">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thatyear" translatesAutoresizingMaskIntoConstraints="NO" id="S6F-xd-6tJ">
                                     <rect key="frame" x="16" y="38" width="80" height="80"/>
-                                    <color key="backgroundColor" red="0.46819138659999998" green="1" blue="0.96684354969999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="80" id="QHR-Fo-aKl"/>
                                         <constraint firstAttribute="height" constant="80" id="T5d-LW-Rcg"/>
@@ -64,6 +63,10 @@
                                     <color key="textColor" red="0.65767174959999997" green="0.83325225110000001" blue="0.75954920049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spilt" translatesAutoresizingMaskIntoConstraints="NO" id="5Ah-hK-9FB">
+                                    <rect key="frame" x="35" y="141" width="284" height="10"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
@@ -74,6 +77,12 @@
                         <view key="tableFooterView" contentMode="scaleToFill" id="0th-sG-wdk">
                             <rect key="frame" x="0.0" y="432" width="375" height="237"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="qcV-Lf-2FU">
+                                    <rect key="frame" x="58" y="145" width="177" height="57"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <sections>
@@ -344,8 +353,11 @@
         <image name="ar" width="22" height="22"/>
         <image name="golden" width="22" height="22"/>
         <image name="home" width="22" height="22"/>
+        <image name="logo" width="100" height="26"/>
         <image name="newtype" width="22" height="22"/>
         <image name="online" width="22" height="22"/>
         <image name="private" width="22" height="22"/>
+        <image name="spilt" width="226" height="5"/>
+        <image name="thatyear" width="56" height="56"/>
     </resources>
 </document>

@@ -40,6 +40,7 @@
             break;
         case 2: {
             BannerViewController *banner = [BannerViewController instantiate];
+            banner.imageNames = [[NSArray alloc]initWithObjects: @"banner1.JPG", @"banner2.JPG", @"banner3.jpg", @"banner4.jpg", @"banner5.jpg", @"banner6.jpg",nil];
             banner.isRoot = YES;
             [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:banner withSlideOutAnimation:NO andCompletion:nil];
         }

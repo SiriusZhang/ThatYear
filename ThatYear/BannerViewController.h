@@ -10,6 +10,7 @@
 
 @interface BannerViewController : UIViewController
 @property (nonatomic) BOOL isRoot;
+@property (nonatomic, strong) NSArray *imageNames;
 
 + (instancetype)instantiate;
 @end

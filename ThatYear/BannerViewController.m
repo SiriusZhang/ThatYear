@@ -24,26 +24,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     CGFloat imageW = self.scrollview.frame.size.width;
     CGFloat imageH = self.scrollview.frame.size.height;
     CGFloat imageY = 0;
     
-    NSArray *images = [[NSArray alloc]initWithObjects: @"banner1.JPG", @"banner2.JPG", @"banner3.jpg", @"banner4.jpg", @"banner5.jpg", @"banner6.jpg",nil];
+    //CGRect bounds = [UIApplication sharedApplication].keyWindow.bounds;
     
-    for (int i = 0; i < images.count; i++) {
+    for (int i = 0; i < self.imageNames.count; i++) {
         UIImageView *imageView = [[UIImageView alloc] init];
         CGFloat imageX = i * imageW;
         imageView.frame = CGRectMake(imageX, imageY, imageW, imageH);
-        imageView.image = [UIImage imageNamed:images[i]];
+        imageView.image = [UIImage imageNamed:self.imageNames[i]];
         self.scrollview.showsHorizontalScrollIndicator = NO;
         [self.scrollview addSubview:imageView];
     }
     
-    CGFloat contentW = images.count *imageW;
+    CGFloat contentW = self.imageNames.count *imageW;
     self.scrollview.contentSize = CGSizeMake(contentW, 0);
     self.scrollview.pagingEnabled = YES;
-    self.pageControl.numberOfPages=images.count;
+    self.pageControl.numberOfPages= self.imageNames.count;
     self.scrollview.delegate = self;
 
 }
