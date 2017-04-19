@@ -129,6 +129,13 @@
                                     <constraint firstAttribute="height" constant="168" id="say-cC-uKu"/>
                                 </constraints>
                             </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ny4-vw-aAC">
+                                <rect key="frame" x="0.0" y="134" width="375" height="399"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="cQp-va-5qp" kind="embed" id="QOd-gG-dWX"/>
+                                </connections>
+                            </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCm-wT-CH4">
                                 <rect key="frame" x="16" y="567" width="343" height="100"/>
                                 <subviews>
@@ -143,25 +150,15 @@
                                     <constraint firstAttribute="height" constant="100" id="uSj-nG-jQV"/>
                                 </constraints>
                             </view>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ny4-vw-aAC">
-                                <rect key="frame" x="0.0" y="168" width="375" height="399"/>
-                                <connections>
-                                    <segue destination="cQp-va-5qp" kind="embed" id="QOd-gG-dWX"/>
-                                </connections>
-                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ny4-vw-aAC" secondAttribute="trailing" id="1bk-tW-Wzw"/>
                             <constraint firstItem="38a-Qs-7cP" firstAttribute="top" secondItem="ZCm-wT-CH4" secondAttribute="bottom" id="D3P-lH-GnW"/>
-                            <constraint firstItem="ny4-vw-aAC" firstAttribute="leading" secondItem="abQ-UZ-7P6" secondAttribute="leading" id="Eur-lV-wsf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZCm-wT-CH4" secondAttribute="trailing" id="HxV-FO-wqQ"/>
                             <constraint firstItem="ZCm-wT-CH4" firstAttribute="leading" secondItem="abQ-UZ-7P6" secondAttribute="leadingMargin" id="Kw2-sL-N2x"/>
-                            <constraint firstItem="ZCm-wT-CH4" firstAttribute="top" secondItem="ny4-vw-aAC" secondAttribute="bottom" id="Mbj-tq-Efa"/>
                             <constraint firstItem="fZy-va-R2H" firstAttribute="top" secondItem="abQ-UZ-7P6" secondAttribute="topMargin" id="USZ-sK-FUH"/>
                             <constraint firstItem="fZy-va-R2H" firstAttribute="leading" secondItem="abQ-UZ-7P6" secondAttribute="leadingMargin" id="ZLy-wy-Er4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fZy-va-R2H" secondAttribute="trailing" id="e7n-rd-aet"/>
-                            <constraint firstItem="ny4-vw-aAC" firstAttribute="top" secondItem="fZy-va-R2H" secondAttribute="bottom" id="qhl-OK-0Ey"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -403,29 +400,8 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Ih1-n2-txU" imageView="qcP-ih-5aK" style="IBUITableViewCellStyleDefault" id="U8z-Ag-Jsl">
-                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U8z-Ag-Jsl" id="YQG-yR-7TL">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="新品上架" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ih1-n2-txU">
-                                                    <rect key="frame" x="52" y="0.0" width="308" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="FZWBJW--GB1-0" family="FZWeiBei-S03S" pointSize="17"/>
-                                                    <color key="textColor" red="0.65767174959999997" green="0.83325225110000001" blue="0.75954920049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="newtype" id="qcP-ih-5aK" userLabel="newtype">
-                                                    <rect key="frame" x="15" y="10" width="22" height="22"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="fgJ-ZU-xGf" imageView="XTS-Mq-UDN" style="IBUITableViewCellStyleDefault" id="Jm8-P2-zuh">
-                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jm8-P2-zuh" id="MRN-pk-DpU">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -439,6 +415,27 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="golden" id="XTS-Mq-UDN" userLabel="golden">
+                                                    <rect key="frame" x="15" y="10" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Ih1-n2-txU" imageView="qcP-ih-5aK" style="IBUITableViewCellStyleDefault" id="U8z-Ag-Jsl">
+                                        <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U8z-Ag-Jsl" id="YQG-yR-7TL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="新品上架" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ih1-n2-txU">
+                                                    <rect key="frame" x="52" y="0.0" width="308" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="FZWBJW--GB1-0" family="FZWeiBei-S03S" pointSize="17"/>
+                                                    <color key="textColor" red="0.65767174959999997" green="0.83325225110000001" blue="0.75954920049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="newtype" id="qcP-ih-5aK" userLabel="newtype">
                                                     <rect key="frame" x="15" y="10" width="22" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>

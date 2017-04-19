@@ -56,10 +56,6 @@
         }
             break;
         case 1: {
-//            ScrollViewController *scroll = [ScrollViewController instantiate];
-//            scroll.imageName = @"品牌故事.jpg";
-//            scroll.isRoot = YES;
-//            [[SlideNavigationController sharedInstance] popToRootAndSwitchToViewController:scroll withSlideOutAnimation:NO andCompletion:nil];
         }
             break;
         case 2: {
