@@ -129,9 +129,8 @@
                                     <constraint firstAttribute="height" constant="168" id="say-cC-uKu"/>
                                 </constraints>
                             </view>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ny4-vw-aAC">
-                                <rect key="frame" x="0.0" y="134" width="375" height="399"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ny4-vw-aAC">
+                                <rect key="frame" x="0.0" y="168" width="375" height="399"/>
                                 <connections>
                                     <segue destination="cQp-va-5qp" kind="embed" id="QOd-gG-dWX"/>
                                 </connections>
@@ -153,12 +152,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ny4-vw-aAC" firstAttribute="leading" secondItem="abQ-UZ-7P6" secondAttribute="leading" id="AJH-4H-YbP"/>
                             <constraint firstItem="38a-Qs-7cP" firstAttribute="top" secondItem="ZCm-wT-CH4" secondAttribute="bottom" id="D3P-lH-GnW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZCm-wT-CH4" secondAttribute="trailing" id="HxV-FO-wqQ"/>
                             <constraint firstItem="ZCm-wT-CH4" firstAttribute="leading" secondItem="abQ-UZ-7P6" secondAttribute="leadingMargin" id="Kw2-sL-N2x"/>
                             <constraint firstItem="fZy-va-R2H" firstAttribute="top" secondItem="abQ-UZ-7P6" secondAttribute="topMargin" id="USZ-sK-FUH"/>
+                            <constraint firstAttribute="trailing" secondItem="ny4-vw-aAC" secondAttribute="trailing" id="Vfz-WE-3pV"/>
                             <constraint firstItem="fZy-va-R2H" firstAttribute="leading" secondItem="abQ-UZ-7P6" secondAttribute="leadingMargin" id="ZLy-wy-Er4"/>
+                            <constraint firstItem="ny4-vw-aAC" firstAttribute="top" secondItem="fZy-va-R2H" secondAttribute="bottom" id="dvq-7M-ikM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fZy-va-R2H" secondAttribute="trailing" id="e7n-rd-aet"/>
+                            <constraint firstItem="ZCm-wT-CH4" firstAttribute="top" secondItem="ny4-vw-aAC" secondAttribute="bottom" id="sh1-LL-1T0"/>
                         </constraints>
                     </view>
                 </viewController>
