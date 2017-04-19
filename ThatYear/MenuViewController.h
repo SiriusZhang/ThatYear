@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MenuViewController : UITableViewController
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 + (instancetype)instantiate;
 

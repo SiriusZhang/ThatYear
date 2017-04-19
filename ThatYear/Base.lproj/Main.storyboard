@@ -19,7 +19,7 @@
         <scene sceneID="L9p-TC-QlT">
             <objects>
                 <navigationController id="3uG-SB-EZu" customClass="SlideNavigationController" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ydT-GX-MDY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="ydT-GX-MDY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -50,20 +50,6 @@
                                         <constraint firstAttribute="height" constant="80" id="T5d-LW-Rcg"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="账户号码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXl-ki-glA">
-                                    <rect key="frame" x="123" y="74" width="308" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <fontDescription key="fontDescription" name="FZWBJW--GB1-0" family="FZWeiBei-S03S" pointSize="17"/>
-                                    <color key="textColor" red="0.65767174959999997" green="0.83325225110000001" blue="0.75954920049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="用户昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xe6-kd-knq">
-                                    <rect key="frame" x="123" y="50" width="308" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <fontDescription key="fontDescription" name="FZWBJW--GB1-0" family="FZWeiBei-S03S" pointSize="17"/>
-                                    <color key="textColor" red="0.65767174959999997" green="0.83325225110000001" blue="0.75954920049999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="spilt" translatesAutoresizingMaskIntoConstraints="NO" id="5Ah-hK-9FB">
                                     <rect key="frame" x="35" y="141" width="284" height="10"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -75,7 +61,7 @@
                                 <constraint firstItem="S6F-xd-6tJ" firstAttribute="leading" secondItem="UDb-bY-iIk" secondAttribute="leading" constant="16" id="SX8-3v-y9Y"/>
                             </constraints>
                         </view>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="0th-sG-wdk">
+                        <view key="tableFooterView" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" id="0th-sG-wdk">
                             <rect key="frame" x="0.0" y="432" width="375" height="237"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -229,6 +215,9 @@
                             <outlet property="delegate" destination="PVs-NZ-0N3" id="nfc-8n-YIC"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="tableView" destination="eVP-PF-hL8" id="DBn-45-2sH"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yNC-8y-fuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

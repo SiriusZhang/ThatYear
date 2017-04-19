@@ -24,6 +24,15 @@
     return [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([self class])];
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    CGRect bounds = self.view.frame;
+    bounds.size.height -= 64;
+    self.tableView.frame = bounds;
+    self.tableView.separatorStyle = NO;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
         case 0: {
